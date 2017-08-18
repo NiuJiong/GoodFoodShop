@@ -1,0 +1,27 @@
+ul,li,ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+p,h1,h2,h3,h4,h5,h6,body,html{
+	margin: 0;
+	padding: 0;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+.clearlr:after{
+	content: '';
+	display: block;
+	height: 0;
+	line-height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearlr{
+	zoom: 1;
+}
