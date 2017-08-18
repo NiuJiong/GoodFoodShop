@@ -1,0 +1,232 @@
+/*		<!--		微信拓客只需三分钟-->*/
+
+.tookeen {
+	background: #E3ECF2;
+	padding-bottom: 100px;
+}
+
+.tookeen div {
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+}
+
+.tookeen div>p:nth-child(1) a {
+	color: #787878;
+	font-size: 18.57px;
+	display: inline-block;
+	border: 1px solid #D4D4D4;
+	padding: 5px 15px;
+	border-radius: 5px;
+	margin: 80px 0 30px 0;
+}
+
+.tookeen div>p:nth-child(2) {
+	font-size: 40px;
+}
+
+.tookeen div>p:nth-child(3) {
+	margin: 50px 0 0 0;
+}
+
+@media (max-width:992px) {
+	.tookeen {
+		padding-bottom: 20px;
+	}
+	.tookeen div>p:nth-child(1) a {
+		margin: 20px 0;
+	}
+	.tookeen div>p:nth-child(2) {
+		font-size: 20px;
+	}
+	.tookeen div>p:nth-child(3) {
+		margin: 20px 0 0 0;
+	}
+}
+
+
+/*		<!--汇聚客流、提升销量、留住顾客-->*/
+
+.period {
+	padding-bottom: 100px;
+}
+
+.period div {
+	margin: auto;
+	text-align: center;
+}
+
+.period div>p:nth-child(1) a {
+	color: #787878;
+	font-size: 18.57px;
+	display: inline-block;
+	border: 1px solid #D4D4D4;
+	padding: 5px 15px;
+	border-radius: 5px;
+	margin: 80px 0 30px 0;
+}
+
+.period div>p:nth-child(2) {
+	font-size: 40px;
+}
+.period ul {
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 150px;
+}
+
+.period ul li {
+	float: left;
+	width: 33.333333%;
+	text-align: center;
+}
+
+.period ul li p:nth-child(1) {
+	display: inline-block;
+	font-size: 180px;
+	vertical-align: middle;
+}
+
+.period ul li p:nth-child(1) img {
+	vertical-align: middle;
+}
+
+.period ul li p:nth-child(2) {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 50px 0 30px 0;
+}
+
+.period ul li p:nth-child(n+3) {
+	font-size: 16px;
+	color: #7A7A7A;
+	width: 80%;
+	margin: auto;
+	margin-top: 5px;
+}
+
+@media (max-width:992px) {
+	.period {
+		padding-bottom: 20px;
+	}
+	.period div>p:nth-child(1) a {
+		margin: 20px 0;
+	}
+	.period div>p:nth-child(2) {
+		font-size: 20px;
+	}
+	.period ul {
+		margin-top: 20px;
+	}
+	.period ul li {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.period ul li p:nth-child(1) {
+		font-size: 80px;
+	}
+	.period ul li p:nth-child(1) img {
+		vertical-align: middle;
+		width: 50%;
+	}
+	.period ul li p:nth-child(2) {
+		margin: 10px 0;
+	}
+	.period ul li p:nth-child(n+3) {
+		font-size: 14px;
+		width: 90%;
+	}
+}
+/*<!--进好店使用场景-->*/
+.scene {
+	padding-bottom: 100px;
+	background: #E3ECF2;
+}
+
+.scene div {
+	margin: auto;
+	text-align: center;
+}
+
+.scene div>p:nth-child(1) a {
+	color: #787878;
+	font-size: 18.57px;
+	display: inline-block;
+	border: 1px solid #D4D4D4;
+	padding: 5px 15px;
+	border-radius: 5px;
+	margin: 80px 0 30px 0;
+}
+
+.scene div>p:nth-child(2) {
+	font-size: 40px;
+}
+.scene ul {
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 150px;
+}
+
+.scene ul li {
+	float: left;
+	width: 33.333333%;
+	text-align: center;
+}
+
+.scene ul li p:nth-child(1) {
+	display: inline-block;
+	font-size: 180px;
+	vertical-align: middle;
+}
+
+.scene ul li p:nth-child(1) img {
+	vertical-align: middle;
+}
+
+.scene ul li p:nth-child(2) {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 50px 0 30px 0;
+}
+
+.scene ul li p:nth-child(n+3) {
+	font-size: 16px;
+	color: #7A7A7A;
+	width: 80%;
+	margin: auto;
+	margin-top: 5px;
+}
+@media (max-width:992px) {
+	.scene {
+		padding-bottom: 20px;
+	}
+	.scene div>p:nth-child(1) a {
+		margin: 20px 0;
+	}
+	.scene div>p:nth-child(2) {
+		font-size: 20px;
+	}
+	.scene ul {
+		margin-top: 20px;
+	}
+	.scene ul li {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.scene ul li p:nth-child(1) {
+		font-size: 80px;
+	}
+	.scene ul li p:nth-child(1) img {
+		vertical-align: middle;
+		width: 50%;
+	}
+	.scene ul li p:nth-child(2) {
+		margin: 10px 0;
+	}
+	.scene ul li p:nth-child(n+3) {
+		font-size: 14px;
+		width: 90%;
+	}
+}

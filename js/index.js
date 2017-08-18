@@ -18,8 +18,5 @@ $(function(){
 		if(index >= $(".banner div").length){
 			index=0;
 		}
-	},4000);
-	
-	
-	
+	},4000);	
 });
