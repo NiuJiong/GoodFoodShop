@@ -1,6 +1,3 @@
-
-
-
 /*轮播*/
 
 .banner {
@@ -519,7 +516,7 @@
 
 @media (max-width:992px) {
 	.promise {
-		padding-bottom:20px;
+		padding-bottom: 20px;
 	}
 	.promise>p:nth-child(1) a {
 		margin: 20px 0 20px 0;
@@ -530,11 +527,14 @@
 	}
 }
 
+
 /*<!--		为什么选择我们-->*/
+
 .choice {
 	text-align: center;
 	padding-bottom: 100px;
 }
+
 .choice>p:nth-child(1) a {
 	color: #787878;
 	font-size: 18.57px;
@@ -544,94 +544,460 @@
 	border-radius: 5px;
 	margin: 80px 0 30px 0;
 }
-.choice>p:nth-child(2){
+
+.choice>p:nth-child(2) {
 	font-size: 40px;
 }
+
 .choice>p:nth-child(2) span {
 	color: #FF9000;
 }
+
 @media (max-width:992px) {
 	.choice {
-		padding-bottom:20px;
+		padding-bottom: 20px;
 	}
 	.choice>p:nth-child(1) a {
 		margin: 20px 0 20px 0;
 	}
-	.choice>p:nth-child(2){
+	.choice>p:nth-child(2) {
 		font-size: 20px;
 	}
 }
-.choice ul{
+
+.choice ul {
 	max-width: 1200px;
-	margin:80px auto;
+	margin: 80px auto;
 }
-.choice ul li p{
+
+.choice ul li p {
 	float: left;
 	width: 45%;
 }
-.choice ul li{
+
+.choice ul li {
 	padding: 20px 0;
 	font-size: 16px;
 	color: #4E4E4E;
 }
-.choice ul li p:nth-child(2){
+
+.choice ul li p:nth-child(2) {
 	width: 10%;
 	font-size: 16px;
 	color: #8C8C8C;
 }
-.choice ul li:nth-child(1) p{
+
+.choice ul li:nth-child(1) p {
 	font-size: 24px;
 	font-weight: bold;
 	padding: 40px 0;
 }
-.choice ul li:nth-child(1) img{
+
+.choice ul li:nth-child(1) img {
 	display: inline-block;
 	width: 40%;
 	margin-top: -10%;
 }
-.choice ul li:nth-child(odd){
+
+.choice ul li:nth-child(odd) {
 	background: #F9F9F9;
 }
-.choice ul li:nth-child(even){
+
+.choice ul li:nth-child(even) {
 	background: #D8D8D8;
 }
+
 @media (max-width:992px) {
-	.choice ul{
-		margin:20px auto;
+	.choice ul {
+		margin: 20px auto;
 	}
-	.choice ul li p{
+	.choice ul li p {
 		float: none;
 		display: inline-block;
 		width: 38%;
-		margin: 0 1%;	
+		margin: 0 1%;
 		vertical-align: middle;
 	}
-	.choice ul li{
+	.choice ul li {
 		padding: 10px 0;
 		font-size: 12px;
 	}
-
-	.choice ul li p:nth-child(2){
+	.choice ul li p:nth-child(2) {
 		width: 15%;
 		font-size: 12px;
 	}
-	.choice ul li:nth-child(1) p{
+	.choice ul li:nth-child(1) p {
 		font-size: 18px;
 		font-weight: bold;
 		padding: 10px 0;
 	}
-	.choice ul li:nth-child(1) img{
+	.choice ul li:nth-child(1) img {
 		display: inline-block;
 		width: 60%;
 		margin-top: -5%;
 	}
-	.choice ul li:nth-child(odd){
+	.choice ul li:nth-child(odd) {
 		background: #F9F9F9;
 	}
-	.choice ul li:nth-child(even){
+	.choice ul li:nth-child(even) {
 		background: #D8D8D8;
 	}
 }
+
+
 /*<!--	合作商家	-->*/
 
+.consociation {
+	background: #E3ECF2;
+	padding: 100px 0;
+	text-align: center;
+	position: relative;
+}
 
+.consociation .left {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 46%;
+	top: 80%;
+	background: url(../images/right01.png) no-repeat center center;
+	background-size: 100% auto;
+	cursor: pointer;
+}
+
+.consociation .left.active {
+	background: url(../images/right.png) no-repeat center center;
+	background-size: 100% auto;
+}
+
+.consociation .right {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	right: 46%;
+	top: 80%;
+	background: url(../images/left01.png) no-repeat center center;
+	background-size: 100% auto;
+	cursor: pointer;
+}
+
+.consociation .right.active {
+	background: url(../images/left.png) no-repeat center center;
+	background-size: 100% auto;
+}
+
+.consociation p {
+	font-size: 40px;
+}
+
+.consociation p span {
+	display: inline-block;
+	width: 70px;
+	border-bottom: 3px solid black;
+	vertical-align: middle;
+}
+
+.consociation .rolllllll {
+	max-width: 1190px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.consociation .rolllllll ul {
+	height: 335px;
+	overflow: hidden;
+	margin: 50px 0;
+	transition: all 1s;
+}
+
+.consociation .rolllllll li {
+	float: left;
+	width: 136px;
+	margin: 0 17px;
+}
+
+.consociation .rolllllll li:nth-child(n+2) {}
+
+.consociation .rolllllll li div {
+	margin-bottom: 30px;
+}
+
+@media (max-width: 1300px) {
+	.consociation .rolllllll {
+		width: 850px;
+	}
+	.consociation .left {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		left: 40%;
+		top: 80%;
+		background: url(../images/right01.png) no-repeat center center;
+		background-size: 100% auto;
+		cursor: pointer;
+	}
+	.consociation .left.active {
+		background: url(../images/right.png) no-repeat center center;
+		background-size: 100% auto;
+	}
+	.consociation .right {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		right: 40%;
+		top: 80%;
+		background: url(../images/left01.png) no-repeat center center;
+		background-size: 100% auto;
+		cursor: pointer;
+	}
+}
+
+@media (max-width:992px) {
+	.consociation {
+		background: #E3ECF2;
+		padding: 50px 0;
+		text-align: center;
+		position: relative;
+	}
+	.consociation .left {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		left: 30%;
+		top: 80%;
+		background: url(../images/right01.png) no-repeat center center;
+		background-size: 100% auto;
+		cursor: pointer;
+	}
+	.consociation .left.active {
+		background: url(../images/right.png) no-repeat center center;
+		background-size: 100% auto;
+	}
+	.consociation .right {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		right: 30%;
+		top: 80%;
+		background: url(../images/left01.png) no-repeat center center;
+		background-size: 100% auto;
+		cursor: pointer;
+	}
+	.consociation .right.active {
+		background: url(../images/left.png) no-repeat center center;
+		background-size: 100% auto;
+	}
+	.consociation p {
+		font-size: 20px;
+	}
+	.consociation p span {
+		display: inline-block;
+		width: 30px;
+		border-bottom: 3px solid black;
+		vertical-align: middle;
+	}
+	.consociation .rolllllll {
+		width: 306px;
+		margin: auto;
+		overflow: hidden;
+	}
+	.consociation .rolllllll ul {
+		height: 200px;
+		overflow: hidden;
+		margin: 50px 0;
+		transition: all 1s;
+	}
+	.consociation .rolllllll li {
+		float: left;
+		width: 68px;
+		margin: 0 17px;
+	}
+	.consociation .rolllllll li:nth-child(n+2) {}
+	.consociation .rolllllll li div {
+		margin-bottom: 30px;
+	}
+}
+
+
+/*<!--		侧边栏-->*/
+
+slide {
+	position: fixed;
+	right: 0;
+	top: 5%;
+	z-index: 99999;
+}
+
+slide ul li {
+	color: white;
+	text-align: center;
+}
+
+slide .cli {
+	margin-bottom: 10px;
+	background: #666666;
+	cursor: pointer;
+}
+
+slide .cli div {
+	padding: 20px;
+	position: relative;
+}
+
+slide ul li:nth-child(1) img {
+	width: 50px;
+	height: 40px;
+}
+
+slide ul li:nth-child(2) {
+	margin-top: 10px;
+	background: #666666;
+	cursor: pointer;
+}
+
+slide ul li:nth-child(3) a {
+	color: white;
+	font-size: 18px;
+}
+
+slide ul li:nth-child(2) img {
+	display: block;
+	width: 50px;
+	height: 40px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+slide ul li:nth-child(3) a img {
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+slide .cli .erweima {
+	position: absolute;
+	right: 100%;
+	top: 0;
+	bottom: 0;
+	background: #666666;
+	width: 200px;
+	height: 200px;
+	z-index: 99999;
+}
+
+slide .cli .tanchu {
+	position: absolute;
+	right: 100%;
+	top: 0;
+	background: #666666;
+	z-index: 99999;
+	vertical-align: middle;
+	display: none;
+}
+
+slide .cli .tanchu.active {
+	display: block;
+}
+
+slide .cli .tanchu span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 200px;
+	font-size: 24px;
+	letter-spacing: 1px;
+	padding: 36px 0;
+}
+
+@media (max-width:992px) {
+	body {
+		padding-bottom: 50px;
+	}
+	slide {
+		right: 0;
+		left: 0;
+		bottom: 0;
+		top: auto;
+	}
+	slide ul {
+		position: relative;
+	}
+	slide ul li {
+		float: left;
+		width: 33.33333%;
+		height: 50px;
+		
+	}
+	slide .cli {
+		margin-bottom: 0;
+		font-size: 12px;
+	}
+	slide .cli div {
+		padding: 0;
+		position: initial;
+	}
+	slide ul li:nth-child(1) img {
+		width: 25px;
+		height: 20px;
+		margin-bottom: 3px;
+		margin-top: 5px;
+	}
+	slide ul li:nth-child(2) {
+		margin-top: 0;
+	}
+	/*slide ul li:nth-child(3) a {
+		color: white;
+		font-size: 18px;
+	}*/
+	slide ul li:nth-child(2) img {
+		display: block;
+		width: 25px;
+		height: 20px;
+		margin: auto;
+		margin-bottom: 6px;
+		margin-top: 5px;
+	}
+	slide ul li:nth-child(3) a{
+		font-size: 12px;
+	}
+	slide ul li:nth-child(3) a img {
+		display: block;
+		width: 25px;
+		height: 20px;
+		margin: auto;
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+	slide .cli .erweima {
+		right: 0;
+		top: auto;
+		left: 0;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		display: none;
+	}
+	slide .cli .erweima.active{
+		display: block;
+	}
+	slide .cli .tanchu {
+		position: absolute;
+		right: 0%;
+		left: 0;
+		bottom: 100%;
+		top: auto;
+		border-bottom: 1px solid #999999;
+	}
+	slide .cli .tanchu.active {
+		display: block;
+	}
+	slide .cli .tanchu span {
+		display: inline-block;
+		vertical-align: middle;
+		width: auto;
+		font-size: 20px;
+		letter-spacing: 1px;
+		padding:0;
+	}
+}

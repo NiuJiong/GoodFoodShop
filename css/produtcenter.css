@@ -1,12 +1,14 @@
 /*		<!--		微信拓客只需三分钟-->*/
-.banner{
-	background: #E3ECF2;
+
+.banner {
+	background: #F2F2F2;
 }
-.banner img{
+
+.banner img {
 	display: block;
 	width: 100%;
-	
 }
+
 .tookeen {
 	background: #E3ECF2;
 	padding-bottom: 30px;
@@ -35,7 +37,8 @@
 .tookeen div>p:nth-child(3) {
 	margin: 30px 0 0 0;
 }
-.tookeen div>p:nth-child(3) img{
+
+.tookeen div>p:nth-child(3) img {
 	width: 65%;
 }
 
@@ -52,8 +55,8 @@
 	.tookeen div>p:nth-child(3) {
 		margin: 20px 0 0 0;
 	}
-	.tookeen div>p:nth-child(3) img{
-		width:100%;
+	.tookeen div>p:nth-child(3) img {
+		width: 100%;
 	}
 }
 
@@ -82,10 +85,11 @@
 .period div>p:nth-child(2) {
 	font-size: 40px;
 }
+
 .period ul {
-	max-width: 1200px;
+	max-width: 1300px;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .period ul li {
@@ -96,12 +100,13 @@
 
 .period ul li p:nth-child(1) {
 	display: inline-block;
-	font-size: 120px;
+	font-size: 180px;
 	vertical-align: middle;
 }
 
 .period ul li p:nth-child(1) img {
 	vertical-align: middle;
+	width: 90%;
 }
 
 .period ul li p:nth-child(2) {
@@ -113,7 +118,7 @@
 .period ul li p:nth-child(n+3) {
 	font-size: 16px;
 	color: #7A7A7A;
-	width: 80%;
+	width: 95%;
 	margin: auto;
 	margin-top: 5px;
 }
@@ -151,10 +156,13 @@
 		width: 90%;
 	}
 }
+
+
 /*<!--进好店使用场景-->*/
+
 .scene {
 	padding-bottom: 50px;
-	background: #E3ECF2;
+	background: #F9F9F9;
 }
 
 .scene div {
@@ -175,10 +183,11 @@
 .scene div>p:nth-child(2) {
 	font-size: 40px;
 }
+
 .scene ul {
-	max-width: 1200px;
+	max-width: 1300px;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .scene ul li {
@@ -189,11 +198,12 @@
 
 .scene ul li p:nth-child(1) {
 	display: inline-block;
-	font-size: 60px;
+	font-size: 160px;
 	vertical-align: middle;
 }
 
 .scene ul li p:nth-child(1) img {
+	width: 80%;
 	vertical-align: middle;
 }
 
@@ -210,6 +220,7 @@
 	margin: auto;
 	margin-top: 5px;
 }
+
 @media (max-width:992px) {
 	.scene {
 		padding-bottom: 20px;
@@ -241,5 +252,101 @@
 	.scene ul li p:nth-child(n+3) {
 		font-size: 14px;
 		width: 90%;
+	}
+}
+
+
+/*		<!--		产品中心列表-->*/
+
+.activitys {
+	max-width: 1200px;
+	margin: 50px auto;
+}
+
+.activitys ul {}
+
+.activitys ul li {
+	vertical-align: middle;
+	margin-bottom: 30px;
+}
+
+.activitys ul li>div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.activitys ul li>div:nth-child(1) {
+	width: 20%;
+	vertical-align: middle;
+}
+
+.activitys ul li>div:nth-child(2) {
+	width: 65%;
+	vertical-align: middle;
+}
+
+.activitys ul li>div:nth-child(2) div {
+	width: 90%;
+	margin: auto;
+}
+
+.activitys ul li>div:nth-child(2) div h3 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.activitys ul li>div:nth-child(2) div p {
+	font-size: 16px;
+	text-indent: 2em;
+	margin-bottom: 20px;
+	color: #666666;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+
+.activitys ul li>div:nth-child(3) {
+	width: 14%;
+}
+
+@media (max-width:992px) {
+	.activitys {
+		margin: 20px auto;
+	}
+	.activitys ul{
+		margin-top: 50px;
+	}
+	.activitys ul li {
+		margin-bottom: 20px;
+		border-bottom:1px solid #eeeeee;
+	}
+	.activitys ul li>div {
+		display: block;
+	}
+	.activitys ul li>div:nth-child(1) {
+		width: 40%;
+		margin: auto;
+	}
+	.activitys ul li>div:nth-child(2) {
+		width: 95%;
+		margin: auto;
+	}
+	.activitys ul li>div:nth-child(2) div {
+		width: 100%;
+	}
+	.activitys ul li>div:nth-child(2) div h3 {
+		font-size:18px;
+		margin-bottom:0px;
+	}
+	.activitys ul li>div:nth-child(2) div p {
+		font-size: 12px;
+		text-indent: 2em;
+		margin-bottom: 10px;
+		color: #666666;
+		line-height:20px;
+		letter-spacing: 1px;
+	}
+	.activitys ul li>div:nth-child(3) {
+		width: 30%;
+		margin: auto;
 	}
 }

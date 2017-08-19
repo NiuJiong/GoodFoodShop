@@ -14,8 +14,9 @@
 	color: #666666;
 	margin-bottom: 30px;
 	letter-spacing: 3px;
-	line-height: 32px;
+	font-family: helvetica;
 	text-indent: 2em;
+	line-height: 36px;
 }
 
 .official p:nth-child(n+5){
