@@ -424,8 +424,8 @@ slide .cli .tanchu span {
 		top: auto;
 		left: 0;
 		bottom: 100%;
-		width: auto;
-		height: auto;
+		width: 100px;
+		height: 100px;
 		display: none;
 	}
 	slide .cli .erweima.active{
