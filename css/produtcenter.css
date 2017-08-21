@@ -31,7 +31,7 @@
 }
 
 .tookeen div>p:nth-child(2) {
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .tookeen div>p:nth-child(3) {
@@ -83,7 +83,7 @@
 }
 
 .period div>p:nth-child(2) {
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .period ul {
@@ -181,7 +181,7 @@
 }
 
 .scene div>p:nth-child(2) {
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .scene ul {
@@ -275,7 +275,7 @@
 }
 
 .activitys>p:nth-child(2) {
-	font-size: 40px;
+	font-size: 30px;
 }
 .activitys ul{
 	margin-top: 50px;
