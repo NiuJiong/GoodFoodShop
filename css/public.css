@@ -65,6 +65,7 @@ header nav .logo {
 header nav ul {
 	float: right;
 	vertical-align: middle;
+	margin-right:200px;
 }
 
 header nav ul li {
@@ -73,7 +74,7 @@ header nav ul li {
 
 header nav ul li a {
 	display: inline-block;
-	padding: 10px 25px;
+	padding: 10px 15px;
 	margin-top: 10px;
 	font-size: 16px;
 	color: #565656;
@@ -85,7 +86,7 @@ header nav ul li a.active {
 }
 
 header nav ul li:last-child a {
-	margin-left: 80px;
+	margin-left:20px;
 	background: #2B9CF0;
 	color: white;
 	border-radius: 10px;
@@ -263,13 +264,14 @@ header nav ul li:last-child a {
 slide {
 	position: fixed;
 	right: 0;
-	top:80px;
+	top:20px;
 	z-index: 99999;
 }
 
 slide ul li {
 	color: white;
-	text-align: center;
+	text-align: center;	
+	background: #666666;
 }
 
 slide .cli {
@@ -278,7 +280,7 @@ slide .cli {
 	cursor: pointer;
 }
 slide .cli:nth-child(3){
-	margin-top: 50px;
+	margin-top: 100px;
 	background: #FF9232;
 }
 slide .cli div {
@@ -369,7 +371,7 @@ slide .cli .tanchu span {
 	}
 	slide ul li {
 		float: left;
-		width: 33.33333%;
+		width: 33%;
 		height: 50px;
 		
 	}
