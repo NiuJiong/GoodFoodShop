@@ -8,13 +8,13 @@ $(function() {
 	$("header nav .menu").click(function() {
 		$("header nav ul").slideToggle();
 	});
-	$("header nav ul .zhuceaaa").click(function(){
-		if($("header nav ul .zhuceaaa p").hasClass("active")){
+	$("header nav ul .zhuceaaa").click(function() {
+		if($("header nav ul .zhuceaaa p").hasClass("active")) {
 			$("header nav ul .zhuceaaa p").removeClass("active");
-		}else{
+		} else {
 			$("header nav ul .zhuceaaa p").addClass("active");
 		}
-		
+
 	});
 
 	//	轮播
@@ -81,4 +81,20 @@ $(function() {
 	$("slide .erwei").mouseout(function() {
 		$(this).find(".erweima").removeClass("active");
 	});
+	if($(window).width() < 992) {
+		$("slide .one").mouseover(function() {
+			$(this).find(".wapim").addClass("active");
+		});
+		$("slide .one").mouseout(function() {
+			$(this).find(".wapim").removeClass("active");
+		});
+	}
+	if($(window).width() > 992) {
+		$("slide .one").mouseover(function() {
+			$(this).find(".buzou").addClass("active");
+		});
+		$("slide .one").mouseout(function() {
+			$(this).find(".buzou").removeClass("active");
+		});
+	}
 });
