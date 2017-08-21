@@ -8,6 +8,14 @@ $(function() {
 	$("header nav .menu").click(function() {
 		$("header nav ul").slideToggle();
 	});
+	$("header nav ul .zhuceaaa").click(function(){
+		if($("header nav ul .zhuceaaa p").hasClass("active")){
+			$("header nav ul .zhuceaaa p").removeClass("active");
+		}else{
+			$("header nav ul .zhuceaaa p").addClass("active");
+		}
+		
+	});
 
 	//	轮播
 	var index = 0;

@@ -65,7 +65,7 @@ header nav .logo {
 header nav ul {
 	float: right;
 	vertical-align: middle;
-	margin-right:200px;
+	margin-right:150px;
 }
 
 header nav ul li {
@@ -84,9 +84,25 @@ header nav ul li a.active {
 	border-bottom: 2px solid #2B9CF0;
 	color: #2B9CF0;
 }
-
-header nav ul li:last-child a {
+header nav ul li:last-child{
+	position: relative;
 	margin-left:20px;
+}
+header nav ul li:last-child p{
+	position: absolute;
+	z-index: 99999;
+	left: 50%;
+	width: 200px;
+	transform: translateX(-50%);
+	display: none;
+}
+header nav ul li:last-child p.active{
+	display: block;
+}
+header nav ul li:last-child button{
+	border: none;
+	outline: none;
+	cursor: pointer;
 	background: #2B9CF0;
 	color: white;
 	border-radius: 10px;
@@ -150,15 +166,28 @@ header nav ul li:last-child a {
 		border-bottom: 2px solid white;
 		color: white;
 	}
-	header nav ul li:last-child a {
+	header nav ul li:last-child{
+	position: initial;
+	margin-left:20px;
+}
+	header nav ul li:last-child button{
 		margin-left: 0;
 		background: none;
 		color: #BBBBBB;
 		border-radius: 10px;
 		font-size: 16px;
-		padding: 5px 10px 5px 25px;
+		padding: 5px 10px 5px 5px;
 		margin-top: 7px;
 	}
+	header nav ul li:last-child p{
+	position: fixed;
+	z-index: 99999;
+	left: 50%;
+	width: 200px;
+	top: 20%;
+	transform: translateX(-50%);
+	display: none;
+}
 }
 
 
@@ -283,7 +312,7 @@ slide .cli {
 	cursor: pointer;
 }
 slide .cli:nth-child(3){
-	margin-top: 100px;
+	margin-top: 60px;
 	background: #FF9232;
 }
 slide .cli div {
