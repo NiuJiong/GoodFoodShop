@@ -53,7 +53,12 @@
 .superiority>p:nth-child(3) {
 	font-size: 30px;
 }
-
+.superiority>p:nth-child(3){
+	/*
+	font-size: 36px;*/
+	font-weight: bold;
+	color: red;
+}
 .superiority>p:nth-child(2) span {
 	color: #FF9000;
 }
