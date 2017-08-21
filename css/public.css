@@ -277,7 +277,10 @@ slide .cli {
 	background: #666666;
 	cursor: pointer;
 }
-
+slide .cli:nth-child(3){
+	margin-top: 50px;
+	background: #FF9232;
+}
 slide .cli div {
 	padding: 10px;
 	position: relative;
@@ -290,7 +293,6 @@ slide ul li:nth-child(1) img {
 }
 
 slide ul li:nth-child(2) {
-	margin-top: 10px;
 	background: #666666;
 	cursor: pointer;
 }
@@ -336,7 +338,9 @@ slide .cli .tanchu {
 	vertical-align: middle;
 	display: none;
 }
-
+slide .cli .tanchu a{
+	color: white;
+}
 slide .cli .tanchu.active {
 	display: block;
 }
@@ -347,7 +351,7 @@ slide .cli .tanchu span {
 	width: 200px;
 	font-size: 24px;
 	letter-spacing: 1px;
-	padding: 36px 0;
+	padding: 22px 0;
 }
 
 @media (max-width:992px) {
@@ -426,7 +430,7 @@ slide .cli .tanchu span {
 		right: 0%;
 		left: 0;
 		bottom: 100%;
-		top: auto;
+		top:auto;
 		border-bottom: 1px solid #999999;
 	}
 	slide .cli .tanchu.active {
