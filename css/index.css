@@ -51,7 +51,7 @@
 
 .superiority>p:nth-child(2),
 .superiority>p:nth-child(3) {
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .superiority>p:nth-child(2) span {
@@ -168,7 +168,7 @@
 
 .colony .content div p:nth-child(2),
 .superiority div p:nth-child(2) {
-	font-size: 40px;
+	font-size: 30px;
 	margin-bottom: 20px;
 }
 
@@ -259,7 +259,7 @@
 }
 
 .resolve div>p:nth-child(2) {
-	font-size: 40px;
+	font-size: 30px;
 	margin-bottom: 30px;
 }
 
@@ -419,7 +419,7 @@
 }
 
 .briefness>p:nth-child(2) {
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .briefness>p:nth-child(2) span {
@@ -507,7 +507,7 @@
 
 .promise>p:nth-child(2),
 .promise>p:nth-child(3) {
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .promise>p:nth-child(2) span {
@@ -546,7 +546,7 @@
 }
 
 .choice>p:nth-child(2) {
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .choice>p:nth-child(2) span {
@@ -687,7 +687,7 @@
 }
 
 .consociation p {
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .consociation p span {
