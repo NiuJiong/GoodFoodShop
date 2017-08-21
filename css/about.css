@@ -21,7 +21,7 @@
 }
 
 .official p:nth-child(n+5){
-/*	font-weight: bold;*/
+	font-weight: bold;
 	text-indent: 0;
 }
 .official p:nth-child(5) span{
