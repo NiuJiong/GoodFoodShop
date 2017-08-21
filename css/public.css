@@ -59,6 +59,7 @@ header nav {
 header nav .logo {
 	float: left;
 	vertical-align: middle;
+	width: 200px;
 }
 
 header nav ul {
@@ -94,6 +95,13 @@ header nav ul li:last-child a {
 }
 
 @media (max-width:992px) {
+	header nav .logo {
+		float: left;
+		vertical-align: middle;
+		width:120px;
+		margin-top: 6px;
+		margin-left: 10px;
+	}
 	header nav {
 		padding: 0 0;
 		position: relative;
@@ -102,16 +110,16 @@ header nav ul li:last-child a {
 		float: right;
 		border: 2px solid #666666;
 		border-radius: 6px;
-		padding-bottom: 10px;
+		padding-bottom: 7px;
 		margin-right: 10px;
 		margin-top: 5px;
 	}
 	header nav .menu span {
 		display: block;
 		border-bottom: 2px solid #666666;
-		width: 25px;
-		margin: 0 10px;
-		margin-top: 8px;
+		width: 20px;
+		margin: 0 8px;
+		margin-top: 6px;
 	}
 	header nav ul {
 		position: absolute;
@@ -243,3 +251,193 @@ header nav ul li:last-child a {
 		background-size: 20% auto;
 	}
 }*/
+
+@media (max-width:992px) {
+	footer{
+		display: none;
+	}
+}
+
+
+/*<!--		侧边栏-->*/
+slide {
+	position: fixed;
+	right: 0;
+	top:80px;
+	z-index: 99999;
+}
+
+slide ul li {
+	color: white;
+	text-align: center;
+}
+
+slide .cli {
+	margin-bottom: 10px;
+	background: #666666;
+	cursor: pointer;
+}
+
+slide .cli div {
+	padding: 10px;
+	position: relative;
+	font-size: 14px;
+}
+
+slide ul li:nth-child(1) img {
+	width: 30px;
+	height: 25px;
+}
+
+slide ul li:nth-child(2) {
+	margin-top: 10px;
+	background: #666666;
+	cursor: pointer;
+}
+
+slide ul li:nth-child(3) a {
+	color: white;
+	font-size: 14px;
+}
+
+slide ul li:nth-child(2) img {
+	display: block;
+	width: 30px;
+	height: 25px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+slide ul li:nth-child(3) a img {
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+slide .cli .erweima {
+	position: absolute;
+	right: 100%;
+	top: 0;
+	bottom: 0;
+	background: #666666;
+	width: 100px;
+	height: 100px;
+	z-index: 99999;
+}
+
+slide .cli .tanchu {
+	position: absolute;
+	right: 100%;
+	top: 0;
+	background: #666666;
+	z-index: 99999;
+	vertical-align: middle;
+	display: none;
+}
+
+slide .cli .tanchu.active {
+	display: block;
+}
+
+slide .cli .tanchu span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 200px;
+	font-size: 24px;
+	letter-spacing: 1px;
+	padding: 36px 0;
+}
+
+@media (max-width:992px) {
+	body {
+		padding-bottom: 50px;
+	}
+	slide {
+		right: 0;
+		left: 0;
+		bottom: 0;
+		top: auto;
+	}
+	slide ul {
+		position: relative;
+	}
+	slide ul li {
+		float: left;
+		width: 33.33333%;
+		height: 50px;
+		
+	}
+	slide .cli {
+		margin-bottom: 0;
+		font-size: 12px;
+	}
+	slide .cli div {
+		padding: 0;
+		position: initial;
+	}
+	slide ul li:nth-child(1) img {
+		width: 25px;
+		height: 20px;
+		margin-bottom: 3px;
+		margin-top: 5px;
+	}
+	slide ul li:nth-child(2) {
+		margin-top: 0;
+	}
+	/*slide ul li:nth-child(3) a {
+		color: white;
+		font-size: 18px;
+	}*/
+	slide ul li:nth-child(2) img {
+		display: block;
+		width: 25px;
+		height: 20px;
+		margin: auto;
+		margin-bottom: 6px;
+		margin-top: 5px;
+	}
+	slide ul li:nth-child(3) a{
+		font-size: 12px;
+	}
+	slide ul li:nth-child(3) a img {
+		display: block;
+		width: 25px;
+		height: 20px;
+		margin: auto;
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+	slide .cli .erweima {
+		right: 0;
+		top: auto;
+		left: 0;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		display: none;
+	}
+	slide .cli .erweima.active{
+		display: block;
+	}
+	slide .cli .tanchu {
+		position: absolute;
+		right: 0%;
+		left: 0;
+		bottom: 100%;
+		top: auto;
+		border-bottom: 1px solid #999999;
+	}
+	slide .cli .tanchu.active {
+		display: block;
+	}
+	slide .cli .tanchu span {
+		display: inline-block;
+		vertical-align: middle;
+		width: auto;
+		font-size: 20px;
+		letter-spacing: 1px;
+		padding:0;
+	}
+}

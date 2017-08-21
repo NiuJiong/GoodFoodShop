@@ -79,7 +79,7 @@
 	border: 1px solid #D4D4D4;
 	padding: 5px 15px;
 	border-radius: 5px;
-	margin: 50px 0 30px 0;
+	margin: 30px 0;
 }
 
 .period div>p:nth-child(2) {
@@ -89,7 +89,7 @@
 .period ul {
 	max-width: 1300px;
 	margin: auto;
-	margin-top: 20px;
+	margin-top:20px;
 }
 
 .period ul li {
@@ -100,13 +100,13 @@
 
 .period ul li p:nth-child(1) {
 	display: inline-block;
-	font-size: 180px;
+	font-size: 120px;
 	vertical-align: middle;
 }
 
 .period ul li p:nth-child(1) img {
-	vertical-align: middle;
-	width: 90%;
+	vertical-align: top;
+	width: 80%;
 }
 
 .period ul li p:nth-child(2) {
@@ -177,7 +177,7 @@
 	border: 1px solid #D4D4D4;
 	padding: 5px 15px;
 	border-radius: 5px;
-	margin: 30px 0 30px 0;
+	margin: 30px 0;
 }
 
 .scene div>p:nth-child(2) {
@@ -187,7 +187,7 @@
 .scene ul {
 	max-width: 1300px;
 	margin: auto;
-	margin-top: 20px;
+	margin-top:20px;
 }
 
 .scene ul li {
@@ -198,19 +198,19 @@
 
 .scene ul li p:nth-child(1) {
 	display: inline-block;
-	font-size: 160px;
+	font-size: 120px;
 	vertical-align: middle;
 }
 
 .scene ul li p:nth-child(1) img {
-	width: 80%;
-	vertical-align: middle;
+	width: 70%;
+	vertical-align: top;
 }
 
 .scene ul li p:nth-child(2) {
 	font-size: 20px;
 	font-weight: bold;
-	margin: 30px 0 30px 0;
+	margin: 30px 0;
 }
 
 .scene ul li p:nth-child(n+3) {
@@ -261,10 +261,25 @@
 .activitys {
 	max-width: 1200px;
 	margin: 50px auto;
+	text-align: center;
 }
 
-.activitys ul {}
+.activitys>p:nth-child(1) a {
+	color: #787878;
+	font-size: 18.57px;
+	display: inline-block;
+	border: 1px solid #D4D4D4;
+	padding: 5px 15px;
+	border-radius: 5px;
+	margin: 30px 0;
+}
 
+.activitys>p:nth-child(2) {
+	font-size: 40px;
+}
+.activitys ul{
+	margin-top: 50px;
+}
 .activitys ul li {
 	vertical-align: middle;
 	margin-bottom: 30px;
@@ -311,6 +326,12 @@
 @media (max-width:992px) {
 	.activitys {
 		margin: 20px auto;
+	}
+	.activitys>p:nth-child(1) a {
+		margin: 20px 0;
+	}
+	.activitys>p:nth-child(2) {
+		font-size: 20px;
 	}
 	.activitys ul{
 		margin-top: 50px;
