@@ -69,19 +69,27 @@ $(function() {
 	});
 
 	// 	侧边栏
-	$("slide .cli").mouseover(function() {
-		$(this).find(".tanchu").addClass("active");
-	});
-	$("slide .cli").mouseout(function() {
-		$(this).find(".tanchu").removeClass("active");
-	});
-	$("slide .erwei").mouseover(function() {
-		$(this).find(".erweima").addClass("active");
-	});
-	$("slide .erwei").mouseout(function() {
-		$(this).find(".erweima").removeClass("active");
-	});
-
+	if($(window).width() > 992) {
+		$("slide .cli").mouseover(function() {
+			$(this).find(".tanchu").addClass("active");
+		});
+		$("slide .cli").mouseout(function() {
+			$(this).find(".tanchu").removeClass("active");
+		});
+		$("slide .erwei").mouseover(function() {
+			$(this).find(".erweima").addClass("active");
+		});
+		$("slide .erwei").mouseout(function() {
+			$(this).find(".erweima").removeClass("active");
+		});
+		
+	}
+$("slide .two").click(function() {
+			$(".bigtan").addClass("active");
+		});
+		$(".bigtan .quxiao").click(function() {
+			$(".bigtan").removeClass("active");
+		});
 	if($(window).width() > 992) {
 		$("slide .one").click(function() {
 			if($(this).find(".buzou").hasClass("active")) {
@@ -95,33 +103,27 @@ $(function() {
 		//			$(this).find(".buzou").removeClass("active");
 		//		});
 	}
-	$("slide .two").click(function() {
-		$(".bigtan").addClass("active");
-	});
-	$(".bigtan .quxiao").click(function() {
-		$(".bigtan").removeClass("active");
-	});
 
 	//	是否微信
-//	if($(window).width() < 992) {
-		var ua = navigator.userAgent.toLowerCase();
-		$("slide .one").click(function() {
-			if(ua.match(/MicroMessenger/i) == "micromessenger") {
-				if($("slide .one .wapim").hasClass("active")) {
-					$(this).find(".wapim").removeClass("active");
-				} else {
-					$(this).find(".wapim").addClass("active");
-				}
-			}else if($(window).width() < 768) {
-				if($(this).find(".buzou").hasClass("active")) {
-					$(this).find(".buzou").removeClass("active");
-				} else {
-					$(this).find(".buzou").addClass("active");
-				}
+	//	if($(window).width() < 992) {
+	var ua = navigator.userAgent.toLowerCase();
+	$("slide .one").click(function() {
+		if(ua.match(/MicroMessenger/i) == "micromessenger") {
+			if($("slide .one .wapim").hasClass("active")) {
+				$(this).find(".wapim").removeClass("active");
+			} else {
+				$(this).find(".wapim").addClass("active");
 			}
-		});
-		//		$("slide .one").mouseout(function() {
-		//			
-		//		});
-//	}
+		} else if($(window).width() < 768) {
+			if($(this).find(".buzou").hasClass("active")) {
+				$(this).find(".buzou").removeClass("active");
+			} else {
+				$(this).find(".buzou").addClass("active");
+			}
+		}
+	});
+	//		$("slide .one").mouseout(function() {
+	//			
+	//		});
+	//	}
 });
