@@ -688,13 +688,12 @@ slide .cli .tanchu span {
 	slide li:nth-child(4){
 		position: fixed;
 		right: 0;
-		top: 45%;
+		top: 46%;
 		line-height: 80px;
 		width: 80px;
 		height: 80px;
 		background: #FF9232;
 		color: white;
-		
 		font-size: 14px;
 	}
 	slide li:nth-child(4) a{
