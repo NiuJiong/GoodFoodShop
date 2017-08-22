@@ -669,7 +669,9 @@ slide .cli .tanchu span {
 		right: 0;
 		top: 30%;
 		line-height: 20px;
-		width: 50px;
+		padding: 15px 0;
+		width: 80px;
+		
 	}
 	slide .cli .tanchu span{
 		display: none;
@@ -686,9 +688,10 @@ slide .cli .tanchu span {
 	slide li:nth-child(4){
 		position: fixed;
 		right: 0;
-		top: 42%;
-		line-height: 50px;
-		width: 50px;
+		top: 45%;
+		line-height: 80px;
+		width: 80px;
+		height: 80px;
 		background: #FF9232;
 		color: white;
 		
