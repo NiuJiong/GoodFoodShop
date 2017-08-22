@@ -108,4 +108,5 @@ $(function() {
 	$(".bigtan .quxiao").click(function(){
 		$(".bigtan").removeClass("active");
 	});
+	
 });
