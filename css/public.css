@@ -65,7 +65,7 @@ header nav .logo {
 header nav ul {
 	float: right;
 	vertical-align: middle;
-	margin-right:150px;
+	margin-right: 150px;
 }
 
 header nav ul li {
@@ -84,11 +84,13 @@ header nav ul li a.active {
 	border-bottom: 2px solid #2B9CF0;
 	color: #2B9CF0;
 }
-header nav ul li:last-child{
+
+header nav ul li:last-child {
 	position: relative;
-	margin-left:20px;
+	margin-left: 20px;
 }
-header nav ul li:last-child p{
+
+header nav ul li:last-child p {
 	position: absolute;
 	z-index: 99999;
 	left: 50%;
@@ -96,10 +98,12 @@ header nav ul li:last-child p{
 	transform: translateX(-50%);
 	display: none;
 }
-header nav ul li:last-child p.active{
+
+header nav ul li:last-child p.active {
 	display: block;
 }
-header nav ul li:last-child button{
+
+header nav ul li:last-child button {
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -110,22 +114,26 @@ header nav ul li:last-child button{
 	padding: 10px 10px;
 	margin-top: 7px;
 }
+
 @media (min-width:992px) {
-	header>img{
+	header>img {
 		display: none;
 	}
-	header>a{
+	header>a {
 		display: none;
 	}
 }
+
 @media (max-width:992px) {
-	header .menu,header ul,header  .logo{
+	header .menu,
+	header ul,
+	header .logo {
 		display: none;
 	}
-	header{
+	header {
 		position: relative;
 	}
-	header>a{
+	header>a {
 		position: absolute;
 		right: 10px;
 		top: 0.8rem;
@@ -133,8 +141,8 @@ header nav ul li:last-child button{
 		font-size: 14px;
 	}
 	header nav {
-	padding: 0;
-}
+		padding: 0;
+	}
 	/*header nav ul {
 	margin-right:0;
 }
@@ -309,23 +317,24 @@ header nav ul li:last-child button{
 }*/
 
 @media (max-width:992px) {
-	footer{
+	footer {
 		display: none;
 	}
 }
 
 
 /*<!--		侧边栏-->*/
+
 slide {
 	position: fixed;
 	right: 0;
-	top:20px;
+	top: 20px;
 	z-index: 99999;
 }
 
 slide ul li {
 	color: white;
-	text-align: center;	
+	text-align: center;
 	background: #666666;
 }
 
@@ -334,37 +343,44 @@ slide .cli {
 	background: #666666;
 	cursor: pointer;
 }
-slide .cli:nth-child(3){
+
+slide .cli:nth-child(3) {
 	margin-top: 60px;
 	background: #FF9232;
 }
+
 slide .cli div {
 	padding: 10px;
 	position: relative;
 	font-size: 14px;
 }
 
-slide ul li:nth-child(1) img:nth-child(1){
+slide ul li:nth-child(1) img:nth-child(1) {
 	width: 30px;
 	height: 25px;
 }
-slide ul li:nth-child(1) img:nth-child(4){
+
+slide ul li:nth-child(1) img:nth-child(4) {
 	display: none;
 }
-slide ul li:nth-child(1) p:nth-child(5){
-		position: absolute;
-		right: 100%;
-		top: 0;
-		z-index: 99999;
-		display: none;
+
+slide ul li:nth-child(1) p:nth-child(5) {
+	position: absolute;
+	right: 100%;
+	top: 0;
+	z-index: 99999;
+	display: none;
 }
-slide ul li:nth-child(1) p:nth-child(5).active{
-		display: block;
+
+slide ul li:nth-child(1) p:nth-child(5).active {
+	display: block;
 }
-slide ul li:nth-child(1) p:nth-child(5) img{
-		width: auto;
-		height: auto;
+
+slide ul li:nth-child(1) p:nth-child(5) img {
+	width: auto;
+	height: auto;
 }
+
 slide ul li:nth-child(2) {
 	background: #666666;
 	cursor: pointer;
@@ -411,9 +427,11 @@ slide .cli .tanchu {
 	vertical-align: middle;
 	display: none;
 }
-slide .cli .tanchu a{
+
+slide .cli .tanchu a {
 	color: white;
 }
+
 slide .cli .tanchu.active {
 	display: block;
 }
@@ -426,24 +444,20 @@ slide .cli .tanchu span {
 	letter-spacing: 1px;
 	padding: 22px 0;
 }
+
 @media (min-width:992px) {
-	/*slide ul li:nth-child(1) p:nth-child(5) img{
-		position: absolute;	
-		
-	}*/
-	
-	/*slide ul li:nth-child(1) p:nth-child(5) img{
-		width: 100%;
-		height: auto;
-	}*/
-	/*.wapim{
+	slide li:last-child {}
+	slide li:last-child a {
+		display: block;
+		background: #FF9232;
+		color: white;
+		padding: 25px 0;
+	}
+	.bigtan {
 		display: none;
-	}*/
-	/*slide ul li:nth-child(1) .tanchu img{
-		width: 100%;
-		height: 100%;
-	}*/
+	}
 }
+
 @media (max-width:992px) {
 	body {
 		padding-bottom: 50px;
@@ -471,10 +485,10 @@ slide .cli .tanchu span {
 		padding: 0;
 		position: initial;
 	}
-	slide .cli:nth-child(3){
-	margin-top: 0;
-	background: #FF9232;
-}
+	slide .cli:nth-child(3) {
+		margin-top: 0;
+		background: #FF9232;
+	}
 	slide ul li:nth-child(1) img {
 		width: 25px;
 		height: 20px;
@@ -483,13 +497,12 @@ slide .cli .tanchu span {
 	}
 	slide ul li:nth-child(2) {
 		margin-top: 0;
-		
 	}
 	/*slide ul li:nth-child(3) a {
 		color: white;
 		font-size: 18px;
 	}*/
-	slide ul li:nth-child(1) .tanchu{
+	slide ul li:nth-child(1) .tanchu {
 		display: none;
 	}
 	slide ul li:nth-child(2) img {
@@ -500,7 +513,7 @@ slide .cli .tanchu span {
 		margin-bottom: 6px;
 		margin-top: 5px;
 	}
-	slide ul li:nth-child(3) a{
+	slide ul li:nth-child(3) a {
 		font-size: 14px;
 	}
 	slide ul li:nth-child(3) a img {
@@ -520,7 +533,7 @@ slide .cli .tanchu span {
 		height: 100px;
 		display: none;
 	}
-	slide .cli .erweima.active{
+	slide .cli .erweima.active {
 		/*display: block;*/
 	}
 	slide .cli .tanchu {
@@ -528,13 +541,13 @@ slide .cli .tanchu span {
 		right: 0%;
 		left: 0;
 		bottom: 100%;
-		top:auto;
+		top: auto;
 		border-bottom: 1px solid #999999;
 	}
 	slide .cli .tanchu.active {
 		display: block;
 	}
-	slide ul li:nth-child(1) .tanchu.active{
+	slide ul li:nth-child(1) .tanchu.active {
 		display: none;
 	}
 	slide .cli .tanchu span {
@@ -543,50 +556,145 @@ slide .cli .tanchu span {
 		width: auto;
 		font-size: 20px;
 		letter-spacing: 1px;
-		padding:0;
+		padding: 0;
 	}
-	slide ul li:nth-child(3){
-		display: none;
-	}
-	slide ul li:nth-child(1) img:nth-child(4){
+	slide ul li:nth-child(1) img:nth-child(4) {
 		position: fixed;
 		top: 60%;
 		left: 50%;
-		width:60%;
+		width: 60%;
 		height: auto;
 		margin-bottom: 0;
 		margin-top: 0;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%, -50%);
 		display: none;
 	}
-	slide ul li:nth-child(1) img:nth-child(4).active{
+	slide ul li:nth-child(1) img:nth-child(4).active {
 		display: block;
 	}
-	slide ul li:nth-child(1) p:nth-child(5){
+	slide ul li:nth-child(1) p:nth-child(5) {
 		position: absolute;
 		right: 100%;
 		top: 0;
 		z-index: 99999;
 		display: none;
-}
-slide ul li:nth-child(1) p:nth-child(5).active{
+	}
+	slide ul li:nth-child(1) p:nth-child(5).active {
 		display: none;
-}
-slide ul li:nth-child(1){
-	background: #ED4420;
-}
-slide ul li:nth-child(2) img{
-	display: inline-block;
-	vertical-align: middle;
-}
-slide ul li p:nth-child(2){
-	display: inline-block;
-	vertical-align: middle;
-}
-slide ul li:nth-child(1) img{
-	vertical-align: middle;
-}
-slide ul li p:nth-child(1){
-	vertical-align: middle;
-}
+	}
+	slide ul li:nth-child(1) {
+		background: #ED4420;
+	}
+	slide ul li:nth-child(2) img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	slide ul li p:nth-child(2) {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	slide ul li:nth-child(1) img {
+		vertical-align: middle;
+	}
+	slide ul li p:nth-child(1) {
+		vertical-align: middle;
+	}
+	slide ul li:nth-child(2) .tanchu {
+		display: none;
+	}
+	slide ul li:nth-child(2) .tanchu.active {
+		display: none;
+	}
+	.bigtan{
+		display: none;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: rgba(0,0,0,0.3);
+		z-index: 99999;
+	}
+	.bigtan.active{
+		display: block;
+	}
+	.bigtan .mobelcl {
+		position: fixed;
+		z-index: 99999;
+		width: 80%;
+		margin: auto;
+		left: 50%;
+		top: 50%;
+		background: white;
+		transform: translate(-50%,-50%);
+		font-size: 14px;
+		text-align: center;
+		padding: 1rem 0 0 0;
+		border-radius:8px;
+	}
+	.bigtan .mobelcl p:nth-child(1){
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom:5px;
+	}
+	.bigtan .mobelcl p:nth-child(2){
+		font-size: 14px;
+		margin-bottom:0;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #E3ECF2;
+		letter-spacing: 0.05rem;
+	}
+	.bigtan .mobelcl p:nth-child(3){
+		padding: 0.8rem 0;
+		position: relative;
+		
+	}
+	.bigtan .mobelcl p:nth-child(3):before{
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		width: 1px;
+		background: #E3ECF2;
+	}
+	.bigtan .mobelcl p:nth-child(3) a{
+		margin: 0 2rem;
+		color: #63AAE1;
+		font-size: 16px;
+	}
+	slide li:nth-child(3){
+		position: fixed;
+		right: 0;
+		top: 30%;
+		line-height: 20px;
+		width: 50px;
+	}
+	slide .cli .tanchu span{
+		display: none;
+	}
+	slide .cli:nth-child(2) .tanchu span.active{
+		display: none;
+	}
+	/*slide ul li:nth-child(4){
+		display: none;
+	}*/
+	slide .cli:nth-child(3) .tanchu.active{
+		display: none;
+	}
+	slide li:nth-child(4){
+		position: fixed;
+		right: 0;
+		top: 42%;
+		line-height: 50px;
+		width: 50px;
+		background: #FF9232;
+		color: white;
+		
+		font-size: 14px;
+	}
+	slide li:nth-child(4) a{
+		color: white;
+	}	
 }

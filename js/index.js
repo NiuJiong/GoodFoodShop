@@ -102,4 +102,10 @@ $(function() {
 //			$(this).find(".buzou").removeClass("active");
 //		});
 	}
+	$("slide .two").click(function(){
+		$(".bigtan").addClass("active");
+	});
+	$(".bigtan .quxiao").click(function(){
+		$(".bigtan").removeClass("active");
+	});
 });
