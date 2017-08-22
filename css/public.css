@@ -580,16 +580,24 @@ slide ul li:nth-child(3) div{
 	slide ul li:nth-child(1) img:nth-child(4).active {
 		display: block;
 	}
-	/*slide ul li:nth-child(1) p:nth-child(5) {
-		position: absolute;
-		right: 100%;
-		top: 0;
+	slide ul li:nth-child(1) p:nth-child(5) {
+		position: fixed;
+		right: 0;
+		top:0;
+		left: 0;
+		bottom: 0;
 		z-index: 99999;
 		display: none;
+		background: rgba(0,0,0,0.3);
+	}
+	slide ul li:nth-child(1) p:nth-child(5) img{
+		width: 80%;
+		height: 70%;
+		margin-top: 20%;
 	}
 	slide ul li:nth-child(1) p:nth-child(5).active {
 		display: block;
-	}*/
+	}
 	slide ul li:nth-child(1) {
 		background: #ED4420;
 	}

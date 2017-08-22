@@ -103,9 +103,8 @@ $(function() {
 	});
 
 	//	是否微信
-	if($(window).width() < 992) {
+//	if($(window).width() < 992) {
 		var ua = navigator.userAgent.toLowerCase();
-
 		$("slide .one").click(function() {
 			if(ua.match(/MicroMessenger/i) == "micromessenger") {
 				if($("slide .one .wapim").hasClass("active")) {
@@ -113,17 +112,16 @@ $(function() {
 				} else {
 					$(this).find(".wapim").addClass("active");
 				}
+			}else if($(window).width() < 768) {
+				if($(this).find(".buzou").hasClass("active")) {
+					$(this).find(".buzou").removeClass("active");
+				} else {
+					$(this).find(".buzou").addClass("active");
+				}
 			}
-//			else if($(window).width() < 768) {
-//				if($(this).find(".buzou").hasClass("active")) {
-//					$(this).find(".buzou").removeClass("active");
-//				} else {
-//					$(this).find(".buzou").addClass("active");
-//				}
-//			}
 		});
 		//		$("slide .one").mouseout(function() {
 		//			
 		//		});
-	}
+//	}
 });
