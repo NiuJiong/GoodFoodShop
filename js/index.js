@@ -106,18 +106,24 @@ $(function() {
 	if($(window).width() < 992) {
 		var ua = navigator.userAgent.toLowerCase();
 
-		$("slide .one").mouseover(function() {
+		$("slide .one").click(function() {
 			if(ua.match(/MicroMessenger/i) == "micromessenger") {
-				if($("slide .one .wapim").hasClass("active")){
+				if($("slide .one .wapim").hasClass("active")) {
 					$(this).find(".wapim").removeClass("active");
-				}else{
+				} else {
 					$(this).find(".wapim").addClass("active");
 				}
-				break;
 			}
+//			else if($(window).width() < 768) {
+//				if($(this).find(".buzou").hasClass("active")) {
+//					$(this).find(".buzou").removeClass("active");
+//				} else {
+//					$(this).find(".buzou").addClass("active");
+//				}
+//			}
 		});
-//		$("slide .one").mouseout(function() {
-//			
-//		});
+		//		$("slide .one").mouseout(function() {
+		//			
+		//		});
 	}
 });

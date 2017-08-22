@@ -17,7 +17,7 @@ a {
 p,
 h1,
 h2,
-h3,
+h3,slide
 h4,
 h5,
 h6,
@@ -580,7 +580,7 @@ slide ul li:nth-child(3) div{
 	slide ul li:nth-child(1) img:nth-child(4).active {
 		display: block;
 	}
-	slide ul li:nth-child(1) p:nth-child(5) {
+	/*slide ul li:nth-child(1) p:nth-child(5) {
 		position: absolute;
 		right: 100%;
 		top: 0;
@@ -588,8 +588,8 @@ slide ul li:nth-child(3) div{
 		display: none;
 	}
 	slide ul li:nth-child(1) p:nth-child(5).active {
-		display: none;
-	}
+		display: block;
+	}*/
 	slide ul li:nth-child(1) {
 		background: #ED4420;
 	}
