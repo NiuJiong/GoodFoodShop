@@ -90,11 +90,16 @@ $(function() {
 		});
 	}
 	if($(window).width() > 992) {
-		$("slide .one").mouseover(function() {
-			$(this).find(".buzou").addClass("active");
+		$("slide .one").click(function() {
+			if($(this).find(".buzou").hasClass("active")){
+				$(this).find(".buzou").removeClass("active");
+			}else{
+				$(this).find(".buzou").addClass("active");
+			}
+			
 		});
-		$("slide .one").mouseout(function() {
-			$(this).find(".buzou").removeClass("active");
-		});
+//		$("slide .one").mouseout(function() {
+//			$(this).find(".buzou").removeClass("active");
+//		});
 	}
 });

@@ -114,6 +114,9 @@ header nav ul li:last-child button{
 	header>img{
 		display: none;
 	}
+	header>a{
+		display: none;
+	}
 }
 @media (max-width:992px) {
 	header .menu,header ul,header  .logo{
@@ -125,7 +128,7 @@ header nav ul li:last-child button{
 	header>a{
 		position: absolute;
 		right: 10px;
-		top: 20px;
+		top: 0.8rem;
 		color: #63AAE1;
 		font-size: 14px;
 	}
@@ -458,7 +461,7 @@ slide .cli .tanchu span {
 		float: left;
 		width: 50%;
 		height: 50px;
-		
+		line-height: 50px;
 	}
 	slide .cli {
 		margin-bottom: 0;
@@ -480,6 +483,7 @@ slide .cli .tanchu span {
 	}
 	slide ul li:nth-child(2) {
 		margin-top: 0;
+		
 	}
 	/*slide ul li:nth-child(3) a {
 		color: white;
@@ -541,7 +545,7 @@ slide .cli .tanchu span {
 		letter-spacing: 1px;
 		padding:0;
 	}
-	slide ul li:nth-child(2){
+	slide ul li:nth-child(3){
 		display: none;
 	}
 	slide ul li:nth-child(1) img:nth-child(4){
@@ -567,5 +571,22 @@ slide .cli .tanchu span {
 }
 slide ul li:nth-child(1) p:nth-child(5).active{
 		display: none;
+}
+slide ul li:nth-child(1){
+	background: #ED4420;
+}
+slide ul li:nth-child(2) img{
+	display: inline-block;
+	vertical-align: middle;
+}
+slide ul li p:nth-child(2){
+	display: inline-block;
+	vertical-align: middle;
+}
+slide ul li:nth-child(1) img{
+	vertical-align: middle;
+}
+slide ul li p:nth-child(1){
+	vertical-align: middle;
 }
 }

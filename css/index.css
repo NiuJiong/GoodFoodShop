@@ -701,34 +701,32 @@
 
 .consociation .left {
 	position: absolute;
-	width: 50px;
-	height: 50px;
-	left: 46%;
+	width: 30px;
+	height: 30px;
+	left: 47%;
 	top: 80%;
-	background: url(../images/right01.png) no-repeat center center;
-	background-size: 100% auto;
+	background: #999999;
 	cursor: pointer;
+	border-radius:50%;
 }
 
 .consociation .left.active {
-	background: url(../images/right.png) no-repeat center center;
-	background-size: 100% auto;
+	background: #333333;
 }
 
 .consociation .right {
 	position: absolute;
-	width: 50px;
-	height: 50px;
-	right: 46%;
+	width: 30px;
+	height: 30px;
+	right: 47%;
 	top: 80%;
-	background: url(../images/left01.png) no-repeat center center;
-	background-size: 100% auto;
+	background: #999999;
 	cursor: pointer;
+	border-radius:50%;
 }
 
 .consociation .right.active {
-	background: url(../images/left.png) no-repeat center center;
-	background-size: 100% auto;
+	background: #333333;
 }
 
 .consociation p {
@@ -772,29 +770,34 @@
 		width: 850px;
 	}
 	.consociation .left {
-		position: absolute;
-		width: 50px;
-		height: 50px;
-		left: 40%;
-		top: 80%;
-		background: url(../images/right01.png) no-repeat center center;
-		background-size: 100% auto;
-		cursor: pointer;
-	}
-	.consociation .left.active {
-		background: url(../images/right.png) no-repeat center center;
-		background-size: 100% auto;
-	}
-	.consociation .right {
-		position: absolute;
-		width: 50px;
-		height: 50px;
-		right: 40%;
-		top: 80%;
-		background: url(../images/left01.png) no-repeat center center;
-		background-size: 100% auto;
-		cursor: pointer;
-	}
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 46%;
+	top: 80%;
+	background: #999999;
+	cursor: pointer;
+	border-radius:50%;
+}
+
+.consociation .left.active {
+	background: #333333;
+}
+
+.consociation .right {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: 46%;
+	top: 80%;
+	background: #999999;
+	cursor: pointer;
+	border-radius:50%;
+}
+
+.consociation .right.active {
+	background: #333333;
+}
 }
 
 @media (max-width:992px) {
@@ -805,33 +808,34 @@
 		position: relative;
 	}
 	.consociation .left {
-		position: absolute;
-		width: 50px;
-		height: 50px;
-		left: 30%;
-		top: 80%;
-		background: url(../images/right01.png) no-repeat center center;
-		background-size: 100% auto;
-		cursor: pointer;
-	}
-	.consociation .left.active {
-		background: url(../images/right.png) no-repeat center center;
-		background-size: 100% auto;
-	}
-	.consociation .right {
-		position: absolute;
-		width: 50px;
-		height: 50px;
-		right: 30%;
-		top: 80%;
-		background: url(../images/left01.png) no-repeat center center;
-		background-size: 100% auto;
-		cursor: pointer;
-	}
-	.consociation .right.active {
-		background: url(../images/left.png) no-repeat center center;
-		background-size: 100% auto;
-	}
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 42%;
+	top: 80%;
+	background: #999999;
+	cursor: pointer;
+	border-radius:50%;
+}
+
+.consociation .left.active {
+	background: #333333;
+}
+
+.consociation .right {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 42%;
+	top: 80%;
+	background: #999999;
+	cursor: pointer;
+	border-radius:50%;
+}
+
+.consociation .right.active {
+	background: #333333;
+}
 	.consociation p {
 		font-size: 20px;
 	}
