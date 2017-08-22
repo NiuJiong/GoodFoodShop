@@ -81,32 +81,38 @@ $(function() {
 	$("slide .erwei").mouseout(function() {
 		$(this).find(".erweima").removeClass("active");
 	});
-	if($(window).width() < 992) {
-		$("slide .one").mouseover(function() {
-			$(this).find(".wapim").addClass("active");
-		});
-		$("slide .one").mouseout(function() {
-			$(this).find(".wapim").removeClass("active");
-		});
-	}
+
 	if($(window).width() > 992) {
 		$("slide .one").click(function() {
-			if($(this).find(".buzou").hasClass("active")){
+			if($(this).find(".buzou").hasClass("active")) {
 				$(this).find(".buzou").removeClass("active");
-			}else{
+			} else {
 				$(this).find(".buzou").addClass("active");
 			}
-			
+
 		});
-//		$("slide .one").mouseout(function() {
-//			$(this).find(".buzou").removeClass("active");
-//		});
+		//		$("slide .one").mouseout(function() {
+		//			$(this).find(".buzou").removeClass("active");
+		//		});
 	}
-	$("slide .two").click(function(){
+	$("slide .two").click(function() {
 		$(".bigtan").addClass("active");
 	});
-	$(".bigtan .quxiao").click(function(){
+	$(".bigtan .quxiao").click(function() {
 		$(".bigtan").removeClass("active");
 	});
-	
+
+	//	是否微信
+	if($(window).width() < 992) {
+		var ua = navigator.userAgent.toLowerCase();
+
+		$("slide .one").mouseover(function() {
+			if(ua.match(/MicroMessenger/i) == "micromessenger") {
+				$(this).find(".wapim").addClass("active");
+			}
+		});
+//		$("slide .one").mouseout(function() {
+//			$(this).find(".wapim").removeClass("active");
+//		});
+	}
 });
