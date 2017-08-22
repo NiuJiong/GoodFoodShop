@@ -82,27 +82,27 @@ $(function() {
 		$("slide .erwei").mouseout(function() {
 			$(this).find(".erweima").removeClass("active");
 		});
-		
-	}
-$("slide .two").click(function() {
-			$(".bigtan").addClass("active");
-		});
-		$(".bigtan .quxiao").click(function() {
-			$(".bigtan").removeClass("active");
-		});
-	if($(window).width() > 992) {
-		$("slide .one").click(function() {
-			if($(this).find(".buzou").hasClass("active")) {
-				$(this).find(".buzou").removeClass("active");
-			} else {
-				$(this).find(".buzou").addClass("active");
-			}
 
-		});
-		//		$("slide .one").mouseout(function() {
-		//			$(this).find(".buzou").removeClass("active");
-		//		});
 	}
+	$("slide .two").click(function() {
+		$(".bigtan").addClass("active");
+	});
+	$(".bigtan .quxiao").click(function() {
+		$(".bigtan").removeClass("active");
+	});
+//	if($(window).width() > 992) {
+//		$("slide .one").click(function() {
+//			if($(this).find(".buzou").hasClass("active")) {
+//				$(this).find(".buzou").removeClass("active");
+//			} else {
+//				$(this).find(".buzou").addClass("active");
+//			}
+//
+//		});
+//		//		$("slide .one").mouseout(function() {
+//		//			$(this).find(".buzou").removeClass("active");
+//		//		});
+//	}
 
 	//	是否微信
 	//	if($(window).width() < 992) {
