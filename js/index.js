@@ -108,11 +108,16 @@ $(function() {
 
 		$("slide .one").mouseover(function() {
 			if(ua.match(/MicroMessenger/i) == "micromessenger") {
-				$(this).find(".wapim").addClass("active");
+				if($("slide .one .wapim").hasClass("active")){
+					$(this).find(".wapim").removeClass("active");
+				}else{
+					$(this).find(".wapim").addClass("active");
+				}
+				break;
 			}
 		});
 //		$("slide .one").mouseout(function() {
-//			$(this).find(".wapim").removeClass("active");
+//			
 //		});
 	}
 });
