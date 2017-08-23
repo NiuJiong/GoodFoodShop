@@ -634,6 +634,10 @@ slide ul li:nth-child(3) div{
 	.bigtan.active{
 		display: block;
 	}
+	.bigtan.retive{
+		display: block;
+		opacity: 0;
+	}
 	.bigtan .mobelcl {
 		position: fixed;
 		z-index: 99999;
