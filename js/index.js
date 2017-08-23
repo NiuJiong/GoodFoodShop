@@ -108,12 +108,12 @@ $(function() {
 	var u = navigator.userAgent;
 //	ios微信不弹出电话提示
 	
-		if(ua.match(/MicroMessenger/i) == "micromessenger" && !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){
+//		if(ua.match(/MicroMessenger/i) == "micromessenger" && !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){
 //			$(".bigtan").removeClass("active");
 //			$(".bigtan").addClass("active");
+		if(ua.match(/MicroMessenger/i) == "micromessenger") {
 			$("slide .three").addClass("active");
 		}else{
-			$("slide .three").removeClass("active");
 			$("slide .three").click(function() {
 				$(".bigtan").addClass("active");
 			});
