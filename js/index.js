@@ -1,10 +1,6 @@
 $(function() {
 
 	//导航效果
-
-	if($(window).width() < 992) {
-		$("header nav ul").hide();
-	}
 	$("header nav .menu").click(function() {
 		$("header nav ul").slideToggle();
 	});
@@ -84,59 +80,4 @@ $(function() {
 		});
 
 	}
-	
-	
-
-	
-//	if($(window).width() > 992) {
-//		$("slide .one").click(function() {
-//			if($(this).find(".buzou").hasClass("active")) {
-//				$(this).find(".buzou").removeClass("active");
-//			} else {
-//				$(this).find(".buzou").addClass("active");
-//			}
-//
-//		});
-//		//		$("slide .one").mouseout(function() {
-//		//			$(this).find(".buzou").removeClass("active");
-//		//		});
-//	}
-
-	//	是否微信
-	//	if($(window).width() < 992) {
-	var ua = navigator.userAgent.toLowerCase();
-	var u = navigator.userAgent;
-//	ios微信不弹出电话提示
-	
-		if(ua.match(/MicroMessenger/i) == "micromessenger" && !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){
-//		if(ua.match(/MicroMessenger/i) == "micromessenger") {
-			$("slide .three").addClass("active");
-		}else{
-			$("slide .three").click(function() {
-				$(".bigtan").addClass("active");
-			});
-		}
-	$(".bigtan .quxiao").click(function() {
-		$(".bigtan").removeClass("active");
-	});
-//	u.indexOf('Android') > -1 || u.indexOf('Adr') > -1
-//!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)
-	$("slide .one").click(function() {
-//		if(ua.match(/MicroMessenger/i) == "micromessenger" && !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){
-//			$(this).find(".buzou").removeClass("active");
-//		}else 
-		if(ua.match(/MicroMessenger/i) == "micromessenger") {
-			if($("slide .one .wapim").hasClass("active")) {
-				$(this).find(".wapim").removeClass("active");
-			} else {
-				$(this).find(".wapim").addClass("active");
-			}
-		}else if($(window).width() < 768) {
-			if($(this).find(".buzou").hasClass("active")) {
-				$(this).find(".buzou").removeClass("active");
-			} else {
-				$(this).find(".buzou").addClass("active");
-			}
-		}
-	});
 });

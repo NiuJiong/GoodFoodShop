@@ -1,6 +1,7 @@
 /*轮播*/
 
 .banner {
+	min-width: 1200px;
 	position: relative;
 }
 
@@ -32,7 +33,7 @@
 /*优势*/
 
 .superiority {
-	max-width: 1200px;
+	width: 1200px;
 	margin: auto;
 	text-align: center;
 }
@@ -106,50 +107,11 @@
 	color: #25C9FF;
 }
 
-@media (max-width:992px) {
-	.banner {
-		display: none;
-	}
-	.superiority>p:nth-child(1) a {
-		font-size: 16px;
-		margin: 20px 0 10px 0;
-	}
-	.superiority>p:nth-child(2),
-	.superiority>p:nth-child(3) {
-		font-size: 18px;
-	}
-	.superiority ul {
-		margin-top: 10px;
-		padding-left: 5px;
-	}
-	.superiority ul li p:nth-child(1) {
-		font-size: 50px;
-	}
-	.superiority ul li p:nth-child(1) img {
-		width: 40%;
-	}
-	.superiority ul li p:nth-child(2) img {
-		width: 50%;
-	}
-	.superiority ul li p:nth-child(3) img {
-		width: 70%;
-	}
-	.superiority ul li p:nth-child(2) {
-		margin-top: 15px;
-	}
-	.superiority ul li p:nth-child(n+2) {
-		font-size: 12px;
-	}
-	.superiority>p:last-child {
-		font-size: 14px;
-		margin: 20px 0;
-	}
-}
-
 
 /*<!--客户群体-->*/
 
 .colony {
+	min-width: 1200px;
 	background: url(../images/bigback.png) no-repeat center center;
 	background-size: 100% 100%;
 	padding-bottom: 140px;
@@ -170,7 +132,7 @@
 
 .colony .content div {
 	float: left;
-	max-width: 450px;
+	width: 450px;
 	margin-left: 30px;
 }
 
@@ -211,56 +173,6 @@
 	color: #000000;
 }
 
-@media (max-width:992px) {
-	.colony {
-		padding-bottom: 0;
-		background: none;
-	}
-	.colony .content>p {
-		float: none;
-		width: 100%;
-		margin-top: 15px;
-		text-align: center;
-		padding-top: 20px;
-	}
-	.colony .content>p img {
-		width: 90%;
-	}
-	.colony .content div {
-		float: none;
-		max-width: 450px;
-		margin-left: 0;
-		padding:20px 0;
-		text-align: center;
-		background: url(../images/bigback.png) no-repeat center center;
-		background-size: 100% 100%;
-	}
-	.colony .content div p{
-		margin: 0 10px;
-	}
-	.colony .content div p:nth-child(1) {
-		display: none;
-		text-align: center;
-	}
-	.colony .content div p:nth-child(1) a {
-		margin: 10px 0 10px 0;
-	}
-	.colony .content div p:nth-child(2),
-	.superiority div p:nth-child(2) {
-		font-size: 20px;
-		margin-bottom: 10px;
-	}
-	.colony .content div p:nth-child(n+3) {
-		font-size: 12px;
-		margin-bottom: 20px;
-		line-height: 24px;
-	}
-	.colony .content div p:last-child {
-		display: none;
-		padding-top: 10px;
-	}
-}
-
 
 /*<!--进好店 - 可以帮你解决-->*/
 
@@ -270,7 +182,7 @@
 }
 
 .resolve div {
-	max-width: 1200px;
+	width: 1200px;
 	margin: auto;
 	text-align: center;
 }
@@ -362,83 +274,10 @@
 	line-height: 30px;
 }
 
-@media (max-width:1200px) {
-	.resolve div ul li {
-		min-height: 500px;
-	}
-}
-
-@media (max-width:992px) {
-	.resolve {
-		padding-bottom: 20px;
-	}
-	.resolve div>p:nth-child(1) a {
-		margin: 20px 0;
-	}
-	.resolve div>p:nth-child(2) {
-		font-size: 20px;
-		margin-bottom: 10px;
-	}
-	.resolve div>p:nth-child(3) {
-		font-size: 12px;
-		width: 90%;
-		line-height: 28px;
-		margin-bottom: 10px;
-	}
-	.resolve div>p:nth-child(4) a span {
-		margin-left: 10px;
-	}
-	.resolve div ul {
-		margin-top: 20px;
-		
-	}
-	.resolve div ul li {
-		float: left;
-		width: 20%;
-		padding: 10px 0;
-		min-height: auto;
-	}
-	.resolve div ul li:nth-child(n+2) {
-		margin-left: 0;
-	}
-	.resolve div ul li p {
-		margin: 0 15px;
-	}
-	.resolve div ul li p:nth-child(1) {
-		/*height: 100px;*/
-		font-size: 10px;
-		vertical-align: middle;
-		padding-top: 10px;
-	}
-	.resolve div ul li p:nth-child(1) img {
-		width: 75%;
-		vertical-align: middle;
-		margin-top: -10px;
-	}
-	.resolve div ul li:nth-child(n+2) p:nth-child(1) img {
-		width: 70%;
-		vertical-align: middle;
-	}
-	.resolve div ul li:nth-child(n+4) p:nth-child(1) img {
-		width: 60%;
-		vertical-align: middle;
-	}
-	.resolve div ul li p:nth-child(2) {
-		font-size: 14px;
-		margin: 10px 0;
-	}
-	.resolve div ul li p:nth-child(3) {
-		display: none;
-		font-size: 12px;
-		line-height: 24px;
-	}
-}
-
-
 /*<!--简单、易用、安全-->*/
 
 .briefness {
-	max-width: 1200px;
+	width: 1200px;
 	margin: auto;
 	text-align: center;
 	padding-bottom: 80px;
@@ -495,40 +334,6 @@
 	color: #7A7A7A;
 }
 
-@media (max-width:992px) {
-	.briefness {
-		padding-bottom: 20px;
-	}
-	.briefness>p:nth-child(1) a {
-		margin: 20px 0;
-	}
-	.briefness>p:nth-child(2) {
-		font-size: 20px;
-	}
-	.briefness ul {
-		margin-top: 20px;
-	}
-	.briefness ul li {
-		float: left;
-		width: 50%;
-		margin-bottom: 20px;
-	}
-	.briefness ul li p:nth-child(2) {
-		font-size: 14px;
-		margin: 10px 0;
-	}
-	.briefness ul li p:nth-child(n+3) {
-		font-size: 12px;
-	}
-	.briefness ul li p:nth-child(1) img {
-	width: 15%;
-}
-
-.briefness ul li:nth-child(n+2) p:nth-child(1) img {
-	width: 12%;
-}
-}
-
 
 /*<!--免费试用到有效为止 没有效果永不收费-->*/
 
@@ -559,19 +364,6 @@
 	color: #FF9000;
 }
 
-@media (max-width:992px) {
-	.promise {
-		padding-bottom: 20px;
-	}
-	.promise>p:nth-child(1) a {
-		margin: 20px 0 20px 0;
-	}
-	.promise>p:nth-child(2),
-	.promise>p:nth-child(3) {
-		font-size: 20px;
-	}
-}
-
 
 /*<!--		为什么选择我们-->*/
 
@@ -598,20 +390,8 @@
 	color: #FF9000;
 }
 
-@media (max-width:992px) {
-	.choice {
-		padding-bottom: 20px;
-	}
-	.choice>p:nth-child(1) a {
-		margin: 20px 0 20px 0;
-	}
-	.choice>p:nth-child(2) {
-		font-size: 20px;
-	}
-}
-
 .choice ul {
-	max-width: 1200px;
+	width: 1200px;
 	margin: 80px auto;
 }
 
@@ -652,82 +432,15 @@
 	background: #D8D8D8;
 }
 
-@media (max-width:992px) {
-	.choice ul {
-		margin: 20px auto;
-	}
-	.choice ul li p {
-		float: none;
-		display: inline-block;
-		width: 38%;
-		margin: 0 1%;
-		vertical-align: middle;
-	}
-	.choice ul li {
-		padding: 10px 0;
-		font-size: 12px;
-	}
-	.choice ul li p:nth-child(2) {
-		width: 15%;
-		font-size: 12px;
-	}
-	.choice ul li:nth-child(1) p {
-		font-size: 18px;
-		font-weight: bold;
-		padding: 10px 0;
-	}
-	.choice ul li:nth-child(1) img {
-		display: inline-block;
-		width: 60%;
-		margin-top: -5%;
-	}
-	.choice ul li:nth-child(odd) {
-		background: #F9F9F9;
-	}
-	.choice ul li:nth-child(even) {
-		background: #D8D8D8;
-	}
-}
-
-
 /*<!--	合作商家	-->*/
 
 .consociation {
 	background: #E3ECF2;
 	padding: 100px 0;
 	text-align: center;
-	position: relative;
 }
 
-.consociation .left {
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	left: 47%;
-	top: 80%;
-	background: #999999;
-	cursor: pointer;
-	border-radius:50%;
-}
 
-.consociation .left.active {
-	background: #333333;
-}
-
-.consociation .right {
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	right: 47%;
-	top: 80%;
-	background: #999999;
-	cursor: pointer;
-	border-radius:50%;
-}
-
-.consociation .right.active {
-	background: #333333;
-}
 
 .consociation p {
 	font-size: 30px;
@@ -741,11 +454,40 @@
 }
 
 .consociation .rolllllll {
-	max-width: 1190px;
+	width: 1190px;
 	margin: auto;
 	overflow: hidden;
+	position: relative;
+}
+.consociation .left {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 46%;
+	top: 90%;
+	background: #999999;
+	cursor: pointer;
+	border-radius:50%;
 }
 
+.consociation .left.active {
+	background: #333333;
+}
+
+.consociation .right {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: 46%;
+	top: 90%;
+	background: #999999;
+	cursor: pointer;
+	border-radius:50%;
+}
+
+.consociation .right.active {
+	background: #333333;
+}
 .consociation .rolllllll ul {
 	height: 335px;
 	overflow: hidden;
@@ -763,108 +505,6 @@
 
 .consociation .rolllllll li div {
 	margin-bottom: 30px;
-}
-
-@media (max-width: 1300px) {
-	.consociation .rolllllll {
-		width: 850px;
-	}
-	.consociation .left {
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	left: 46%;
-	top: 80%;
-	background: #999999;
-	cursor: pointer;
-	border-radius:50%;
-}
-
-.consociation .left.active {
-	background: #333333;
-}
-
-.consociation .right {
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	right: 46%;
-	top: 80%;
-	background: #999999;
-	cursor: pointer;
-	border-radius:50%;
-}
-
-.consociation .right.active {
-	background: #333333;
-}
-}
-
-@media (max-width:992px) {
-	.consociation {
-		background: #E3ECF2;
-		padding: 50px 0;
-		text-align: center;
-		position: relative;
-	}
-	.consociation .left {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	left: 42%;
-	top: 80%;
-	background: #999999;
-	cursor: pointer;
-	border-radius:50%;
-}
-
-.consociation .left.active {
-	background: #333333;
-}
-
-.consociation .right {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	right: 42%;
-	top: 80%;
-	background: #999999;
-	cursor: pointer;
-	border-radius:50%;
-}
-
-.consociation .right.active {
-	background: #333333;
-}
-	.consociation p {
-		font-size: 20px;
-	}
-	.consociation p span {
-		display: inline-block;
-		width: 30px;
-		border-bottom: 3px solid black;
-		vertical-align: middle;
-	}
-	.consociation .rolllllll {
-		width: 306px;
-		margin: auto;
-		overflow: hidden;
-	}
-	.consociation .rolllllll ul {
-		height: 200px;
-		overflow: hidden;
-		margin: 50px 0;
-		transition: all 1s;
-	}
-	.consociation .rolllllll li {
-		float: left;
-		width: 68px;
-		margin: 0 17px;
-	}
-	.consociation .rolllllll li:nth-child(n+2) {}
-	.consociation .rolllllll li div {
-		margin-bottom: 30px;
-	}
 }
 
 

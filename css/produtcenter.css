@@ -1,6 +1,7 @@
 /*		<!--		微信拓客只需三分钟-->*/
 
 .banner {
+	min-width: 1200px;
 	background: #F2F2F2;
 }
 
@@ -10,12 +11,13 @@
 }
 
 .tookeen {
+	
 	background: #E3ECF2;
 	padding-bottom: 30px;
 }
 
 .tookeen div {
-	max-width: 1200px;
+	width: 1200px;
 	margin: auto;
 	text-align: center;
 }
@@ -42,28 +44,12 @@
 	width: 65%;
 }
 
-@media (max-width:992px) {
-	.tookeen {
-		padding-bottom: 0;
-	}
-	.tookeen div>p:nth-child(1) a {
-		margin: 20px 0;
-	}
-	.tookeen div>p:nth-child(2) {
-		font-size: 20px;
-	}
-	.tookeen div>p:nth-child(3) {
-		margin: 20px 0 0 0;
-	}
-	.tookeen div>p:nth-child(3) img {
-		width: 100%;
-	}
-}
-
 
 /*		<!--汇聚客流、提升销量、留住顾客-->*/
 
 .period {
+	width: 1200px;
+	margin: auto;
 	padding-bottom: 30px;
 }
 
@@ -123,49 +109,18 @@
 	margin-top: 5px;
 }
 
-@media (max-width:992px) {
-	.period {
-		padding-bottom: 20px;
-	}
-	.period div>p:nth-child(1) a {
-		margin: 20px 0;
-	}
-	.period div>p:nth-child(2) {
-		font-size: 20px;
-	}
-	.period ul {
-		margin-top: 20px;
-	}
-	.period ul li {
-		float: none;
-		width: 100%;
-		text-align: center;
-	}
-	.period ul li p:nth-child(1) {
-		font-size: 80px;
-	}
-	.period ul li p:nth-child(1) img {
-		vertical-align: middle;
-		width: 50%;
-	}
-	.period ul li p:nth-child(2) {
-		margin: 10px 0;
-	}
-	.period ul li p:nth-child(n+3) {
-		font-size: 14px;
-		width: 90%;
-	}
-}
 
 
 /*<!--进好店使用场景-->*/
 
 .scene {
+	
 	padding-bottom: 50px;
 	background: #F9F9F9;
 }
 
 .scene div {
+	width: 1200px;
 	margin: auto;
 	text-align: center;
 }
@@ -185,7 +140,7 @@
 }
 
 .scene ul {
-	max-width: 1300px;
+	width: 1200px;
 	margin: auto;
 	margin-top:20px;
 }
@@ -221,45 +176,12 @@
 	margin-top: 5px;
 }
 
-@media (max-width:992px) {
-	.scene {
-		padding-bottom: 20px;
-	}
-	.scene div>p:nth-child(1) a {
-		margin: 20px 0;
-	}
-	.scene div>p:nth-child(2) {
-		font-size: 20px;
-	}
-	.scene ul {
-		margin-top: 20px;
-	}
-	.scene ul li {
-		float: none;
-		width: 100%;
-		text-align: center;
-	}
-	.scene ul li p:nth-child(1) {
-		font-size: 80px;
-	}
-	.scene ul li p:nth-child(1) img {
-		vertical-align: middle;
-		width: 50%;
-	}
-	.scene ul li p:nth-child(2) {
-		margin: 10px 0;
-	}
-	.scene ul li p:nth-child(n+3) {
-		font-size: 14px;
-		width: 90%;
-	}
-}
 
 
 /*		<!--		产品中心列表-->*/
 
 .activitys {
-	max-width: 1200px;
+	width: 1200px;
 	margin: 50px auto;
 	text-align: center;
 }
@@ -321,53 +243,4 @@
 
 .activitys ul li>div:nth-child(3) {
 	width: 13%;
-}
-
-@media (max-width:992px) {
-	.activitys {
-		margin: 20px auto;
-	}
-	.activitys>p:nth-child(1) a {
-		margin: 20px 0;
-	}
-	.activitys>p:nth-child(2) {
-		font-size: 20px;
-	}
-	.activitys ul{
-		margin-top: 50px;
-	}
-	.activitys ul li {
-		margin-bottom: 20px;
-		border-bottom:1px solid #eeeeee;
-	}
-	.activitys ul li>div {
-		display: block;
-	}
-	.activitys ul li>div:nth-child(1) {
-		width: 40%;
-		margin: auto;
-	}
-	.activitys ul li>div:nth-child(2) {
-		width: 95%;
-		margin: auto;
-	}
-	.activitys ul li>div:nth-child(2) div {
-		width: 100%;
-	}
-	.activitys ul li>div:nth-child(2) div h3 {
-		font-size:18px;
-		margin-bottom:0px;
-	}
-	.activitys ul li>div:nth-child(2) div p {
-		font-size: 12px;
-		text-indent: 2em;
-		margin-bottom: 10px;
-		color: #666666;
-		line-height:20px;
-		letter-spacing: 1px;
-	}
-	.activitys ul li>div:nth-child(3) {
-		width: 30%;
-		margin: auto;
-	}
 }
