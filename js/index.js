@@ -107,14 +107,15 @@ $(function() {
 	var ua = navigator.userAgent.toLowerCase();
 	var u = navigator.userAgent;
 //	ios微信不弹出电话提示
-	$("slide .two").click(function() {
-//		if(ua.match(/MicroMessenger/i) == "micromessenger" && !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){
-////			$(".bigtan").removeClass("active");
+	$("slide .three").click(function() {
+		if(ua.match(/MicroMessenger/i) == "micromessenger" && !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){
+//			$(".bigtan").removeClass("active");
 //			$(".bigtan").addClass("active");
-//		}else{
-//			$(".bigtan").addClass("active");
-//		}
-		$(".bigtan").addClass("active");
+			$("slide .three").addClass("active");
+		}else{
+			$("slide .three").removeClass("active");
+			$(".bigtan").addClass("active");
+		}
 	});
 	$(".bigtan .quxiao").click(function() {
 		$(".bigtan").removeClass("active");

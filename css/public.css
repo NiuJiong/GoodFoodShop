@@ -12,6 +12,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: white;
 }
 
 p,
@@ -353,6 +354,7 @@ slide .cli div {
 	padding: 10px;
 	position: relative;
 	font-size: 14px;
+	color: white;
 }
 
 slide ul li:nth-child(1) img:nth-child(1) {
@@ -462,6 +464,9 @@ slide ul li:nth-child(3) div{
 		padding: 20px 0;
 	}
 	.bigtan {
+		display: none;
+	}
+	slide .four{
 		display: none;
 	}
 }
@@ -605,6 +610,7 @@ slide ul li:nth-child(3) div{
 		display: inline-block;
 		vertical-align: middle;
 	}
+	
 	slide ul li p:nth-child(2) {
 		display: inline-block;
 		vertical-align: middle;
@@ -621,6 +627,18 @@ slide ul li:nth-child(3) div{
 	slide ul li:nth-child(2) .tanchu.active {
 		display: none;
 	}
+	slide ul li:nth-child(2) .three.active{
+		display: none;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	.bigtan{
 		display: none;
 		position: fixed;
