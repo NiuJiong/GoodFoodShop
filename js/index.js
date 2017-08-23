@@ -84,12 +84,12 @@ $(function() {
 		});
 
 	}
-	$("slide .two").click(function() {
-		$(".bigtan").addClass("active");
-	});
-	$(".bigtan .quxiao").click(function() {
-		$(".bigtan").removeClass("active");
-	});
+//	$("slide .two").click(function() {
+//		$(".bigtan").addClass("active");
+//	});
+//	$(".bigtan .quxiao").click(function() {
+//		$(".bigtan").removeClass("active");
+//	});
 //	if($(window).width() > 992) {
 //		$("slide .one").click(function() {
 //			if($(this).find(".buzou").hasClass("active")) {
@@ -107,19 +107,30 @@ $(function() {
 	//	是否微信
 	//	if($(window).width() < 992) {
 	var ua = navigator.userAgent.toLowerCase();
+	var u = navigator.userAgent;
+//	u.indexOf('Android') > -1 || u.indexOf('Adr') > -13
+//!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)
 	$("slide .one").click(function() {
-		if(ua.match(/MicroMessenger/i) == "micromessenger") {
+		if(ua.match(/MicroMessenger/i) == "micromessenger" && u.indexOf('Android') > -1 || u.indexOf('Adr') > -13){
+			$(this).find(".buzou").removeClass("active");
+		}else if(ua.match(/MicroMessenger/i) == "micromessenger") {
 			if($("slide .one .wapim").hasClass("active")) {
 				$(this).find(".wapim").removeClass("active");
 			} else {
 				$(this).find(".wapim").addClass("active");
 			}
-		} else if($(window).width() < 768) {
+		}else if($(window).width() < 768) {
 			if($(this).find(".buzou").hasClass("active")) {
 				$(this).find(".buzou").removeClass("active");
 			} else {
 				$(this).find(".buzou").addClass("active");
 			}
+			$("slide .two").click(function() {
+				$(".bigtan").addClass("active");
+			});
+			$(".bigtan .quxiao").click(function() {
+				$(".bigtan").removeClass("active");
+			});
 		}
 	});
 	//		$("slide .one").mouseout(function() {
